@@ -1,0 +1,88 @@
+p.__Zomato_txt {
+    font-weight: 700;
+    color: white;
+    font-size: 50px;
+}
+
+p.__Zomato__describe_txt {
+    font-weight: 500;
+    color: white;
+    font-size: 30px;
+    font-family: inherit;
+}
+
+.header__serchbar {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 4rem;
+    border-radius: 0.8rem;
+    border: 1px solid rgb(232, 232, 232);
+    background: white;
+    display: flex;
+    position: relative;
+}
+
+input.select {
+    border: none;
+    font-size: 1.4rem;
+    size: 20px;
+    margin: 0px 1rem 0px 0.5rem;
+}
+
+.location__select input,
+.restaurant__input input,
+.location__select input:focus-visible {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.location__rastaurant {
+    border: none;
+    font-size: 1.4rem;
+    width: 100%;
+    border-radius: 0.8rem;
+}
+
+.optionCity_field {
+    color: black;
+    background-color: white;
+    position: absolute;
+    top: 4.5rem;
+    width: 40%;
+    left: 0;
+    border-radius: 10px;
+    padding: 0.5rem;
+    border: 2px solid #eee;
+    z-index: 1;
+}
+
+.optionRastaurant__field {
+    color: black;
+    background-color: white;
+    position: absolute;
+    top: 4.5rem;
+    width: 60%;
+    right: 0;
+    border-radius: 10px;
+    padding: 0.5rem;
+    border: 2px solid #eee;
+    z-index: 1;
+}
+
+.text__scrollBar {
+    max-height: 180px;
+    overflow-y: scroll;
+}
+
+.rastaurant__card {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .location__select input {
+        width: 100%;
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,45 @@
+.category__card {
+    transition: 0.3s;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.category__card:hover {
+    transform: scale(1.1);
+}
+
+img.category__image {
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.category__text {
+    font-size: 23px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.category__heading {
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 32px;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+p.collection__number {
+    font-size: small;
+}
+
+.collection__cards {
+    display: flex;
+    width: 100%;
+}

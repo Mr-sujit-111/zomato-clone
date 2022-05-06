@@ -1,0 +1,24 @@
+h2.footer__heading {
+    color: red;
+    text-transform: capitalize;
+}
+
+.footer__description {
+    font-size: inherit;
+    margin: 0px 0px 2.5rem;
+    color: rgb(54, 54, 54);
+    width: 100%;
+    line-height: 3.2rem;
+    font-size: 18px;
+}
+
+.zomato__text {
+    font-weight: 700;
+    color: black;
+    font-size: 40px;
+}
+
+.zomato__description {
+    position: absolute;
+    margin-top: 20px;
+}

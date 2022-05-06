@@ -1,24 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Navbar from './components/Navbar';
+import Category from './components/Category';
+import PopulerLocation from './components/Populer_location';
+import GetApp from './components/GetApp';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="container-fluid">
+        <div className="row __header">
+          <Navbar />
+          <Header />
+        </div>
+      </div>
+      <div className="container">
+        <div className="row __category">
+          <Category sectionName="Category Section" />
+        </div>
+        <div className="__category">
+          <Category sectionName="Collections Section" />
+        </div>
+        <div className="populer__location mt-5">
+          <PopulerLocation />
+        </div>
+        <div className="row m-4 footer">
+          <GetApp />
+        </div>
+      </div>
+    </>
   );
 }
 
