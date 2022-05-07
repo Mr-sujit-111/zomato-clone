@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Category from './components/Category';
 import PopulerLocation from './components/Populer_location';
 import GetApp from './components/GetApp';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
           <Header />
         </div>
       </div>
-      <div className="container">
+      <div className="container web__body">
         <div className="row __category">
           <Category sectionName="Category Section" />
         </div>
@@ -24,8 +25,11 @@ function App() {
         <div className="populer__location mt-5">
           <PopulerLocation />
         </div>
-        <div className="row m-4 footer">
+        <div className="row mt-4 footer">
           <GetApp />
+        </div>
+        <div className="row mt-4">
+          <Footer />
         </div>
       </div>
     </>

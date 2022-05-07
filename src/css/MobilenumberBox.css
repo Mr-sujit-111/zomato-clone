@@ -1,0 +1,243 @@
+.md-group {
+    position: relative;
+    margin-bottom: 15px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.md-group input:not([type="submit"]),
+.md-group input:not([type="reset"]),
+.md-group textarea,
+.md-group select,
+.md-group select.form-control {
+    border: none;
+    border: 1px solid #ced4da;
+    border-radius: 0px;
+    background-clip: unset;
+    color: transparent;
+    padding: 15px;
+    height: 40px;
+}
+
+.md-group input:not([type="submit"])::placeholder,
+.md-group input:not([type="reset"])::placeholder,
+.md-group textarea::placeholder,
+.md-group select::placeholder,
+.md-group select.form-control::placeholder {
+    color: transparent;
+}
+
+.md-group input:not([type="submit"]):focus,
+.md-group input:not([type="reset"]):focus,
+.md-group textarea:focus,
+.md-group select:focus,
+.md-group select.form-control:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: none;
+    color: #333 !important;
+}
+
+.md-group input:not([type="submit"]):focus::placeholder,
+.md-group input:not([type="reset"]):focus::placeholder,
+.md-group textarea:focus::placeholder,
+.md-group select:focus::placeholder,
+.md-group select.form-control:focus::placeholder {
+    color: #dee2e6 !important;
+}
+
+.md-group input:not([type="submit"]):focus+label,
+.md-group input:not([type="reset"]):focus+label,
+.md-group textarea:focus+label,
+.md-group select:focus+label,
+.md-group select.form-control:focus+label,
+.md-group input:not([type="submit"]):focus .ng2-tag-input-focus+label,
+.md-group input:not([type="reset"]):focus .ng2-tag-input-focus+label,
+.md-group textarea:focus .ng2-tag-input-focus+label,
+.md-group select:focus .ng2-tag-input-focus+label,
+.md-group select.form-control:focus .ng2-tag-input-focus+label {
+    top: 0;
+    font-size: rem(12);
+}
+
+.was-validated .md-group input:not([type="submit"]):invalid,
+.was-validated .md-group input:not([type="reset"]):invalid,
+.was-validated .md-group textarea:invalid,
+.was-validated .md-group select:invalid,
+.was-validated .md-group select.form-control:invalid {
+    border-bottom: 1.2px solid #fa6541;
+}
+
+.was-validated .md-group input:not([type="submit"]):invalid~label,
+.was-validated .md-group input:not([type="reset"]):invalid~label,
+.was-validated .md-group textarea:invalid~label,
+.was-validated .md-group select:invalid~label,
+.was-validated .md-group select.form-control:invalid~label {
+    color: #fa6541;
+}
+
+.md-group input:not([type="submit"]):valid:focus,
+.md-group input:not([type="reset"]):valid:focus,
+.md-group textarea:valid:focus,
+.md-group select:valid:focus,
+.md-group select.form-control:valid:focus,
+.md-group input:not([type="submit"]):invalid:focus,
+.md-group input:not([type="reset"]):invalid:focus,
+.md-group textarea:invalid:focus,
+.md-group select:invalid:focus,
+.md-group select.form-control:invalid:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.was-validated .md-group input:not([type="submit"]):valid,
+.was-validated .md-group input:not([type="reset"]):valid,
+.was-validated .md-group textarea:valid,
+.was-validated .md-group select:valid,
+.was-validated .md-group select.form-control:valid {
+    border-bottom: 1.2px solid #09c098;
+}
+
+.was-validated .was-validated .md-group input:not([type="submit"]):valid~label,
+.was-validated .was-validated .md-group input:not([type="reset"]):valid~label,
+.was-validated .was-validated .md-group textarea:valid~label,
+.was-validated .was-validated .md-group select:valid~label,
+.was-validated .was-validated .md-group select.form-control:valid~label {
+    color: #09c098;
+}
+
+.md-group textarea {
+    height: auto;
+}
+
+.md-group label {
+    margin: 0;
+    position: absolute;
+    top: 1.5rem;
+    pointer-events: none;
+    display: block;
+    left: 0.75rem;
+    transition: all 0.2s ease-in-out;
+    color: #adb5bd;
+    z-index: 9;
+}
+
+.md-group.is-valid {
+    border-bottom: 1.2px solid #09c098;
+}
+
+.md-group.is-valid~label {
+    color: #09c098;
+}
+
+.md-group.is-invalid {
+    border-bottom: 1.2px solid #fa6541;
+}
+
+.md-group.is-invalid~label {
+    color: #fa6541;
+}
+
+.md-group.input-group [class*="input-group"] {
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+}
+
+.md-group.input-group .form-control {
+    width: 100%;
+}
+
+.show-label label {
+    color: #4267b2;
+    top: -10px;
+    left: 0;
+    font-size: rem(14);
+}
+
+.show-label.input-group [class*="input-group"] {
+    opacity: 1;
+    visibility: visible;
+    width: auto;
+}
+
+.show-label.input-group .form-control {
+    width: 1%;
+}
+
+.show-label .form-control {
+    color: #344051 !important;
+    padding: 0.3125rem !important;
+}
+
+.show-label .form-control::placeholder {
+    color: #dee2e6 !important;
+}
+
+.input-group-text {
+    border: none;
+}
+
+.form-check-input {
+    display: none;
+}
+
+.form-check-input~label:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: rem(3);
+    left: 0;
+    font-size: rem(16);
+    border: 1px solid #ccc;
+    border-radius: rem(2);
+    transition: all 0.3s ease-in-out;
+}
+
+.form-check-input~label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: rem(3);
+    left: rem(3);
+    content: '';
+    font-family: 'fontawesome';
+    color: white;
+    font-size: rem(12);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-check-input:checked~label:before {
+    background-color: blue;
+    border-color: transparent;
+}
+
+.form-check-input:checked~label:after {
+    opacity: 1;
+}
+
+.form-check {
+    padding-left: rem(28);
+}
+
+.billingform .intl-tel-input .form-control {
+    padding-left: 47px !important;
+}
+
+.intl-tel-input .flag-dropdown .selected-flag {
+    padding: 11px 16px 11px 6px;
+}
+
+.intl-tel-input {
+    z-index: 99;
+    width: 100%;
+}
+
+.iti-flag {
+    box-shadow: none;
+}
+
+.intl-tel-input .selected-flag:focus {
+    outline: none;
+}

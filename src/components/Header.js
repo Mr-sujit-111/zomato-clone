@@ -19,7 +19,7 @@ function Header() {
     const handleChange = (e) => {
         setSearchValue(e.target.value);
         let filterCities = [];
-        AllCities.map((item, index) => {
+        AllCities.map((item) => {
             if (item.toLowerCase().includes(searchValue)) {
                 filterCities.push(item);
             } else {
@@ -32,7 +32,7 @@ function Header() {
     const rastaurantFieldChange = (e) => {
         setInputrestaurant(e.target.value);
         let filterRastaurant = [];
-        RestaurantData.map((item, index) => {
+        RestaurantData.map((item) => {
             if (item.rastaurantname.toLowerCase().includes(inputrestaurant)) {
                 filterRastaurant.push(item);
             } else {
@@ -110,6 +110,7 @@ function Header() {
                                         <div className="rastaurant__card" onClick={setUpdatedRastaurant} data-name={rastaurantname}>
                                             <SearchRastaurantItem key={id} image={image} address={address} rastaurantname={rastaurantname} >
                                             </SearchRastaurantItem>
+                                            <hr />
                                         </div>
                                     </>
                                 })
