@@ -3,8 +3,8 @@ import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Category from './components/Category';
 import PopulerLocation from './components/Populer_location';
-import GetApp from './components/GetApp';
 import Footer from './components/Footer';
+import Download from './components/Download';
 
 function App() {
   return (
@@ -25,10 +25,12 @@ function App() {
         <div className="populer__location mt-5">
           <PopulerLocation />
         </div>
-        <div className="row mt-4 footer">
-          <GetApp />
-        </div>
-        <div className="row mt-4">
+      </div>
+      <div className="row mt-4 footer container-fluid">
+        <Download />
+      </div>
+      <div className="container">
+        <div className="row mt-4 ">
           <Footer />
         </div>
       </div>

@@ -15,10 +15,6 @@ function Footer() {
     const [country, setCountry] = useState("India")
     const countryData = Country.getAllCountries();
 
-    // for(let i=0; i<=24; i++){
-    //     console.log(countryData[i].isoCode)
-    // }
-
     const handleClick = () => {
         console.log("clicked");
         setCountryList(!countryList);
@@ -37,7 +33,6 @@ function Footer() {
                         <div className="row flag__list" >
                             {countryData.map((item, index) => {
                                 const handleIconClick = (e) => {
-                                    // const country = e.target.getAttribute("data-iconname")
                                     const updatedcountry = e.target.parentElement.getAttribute("data-iconname");
                                     setCountry(updatedcountry)
                                     setCountryList(false);

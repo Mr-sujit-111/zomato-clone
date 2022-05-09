@@ -1,0 +1,65 @@
+.download-section {
+    background-color: #fffbf7;
+    font-family: Okra, Helvetica, sans-serif;
+}
+
+.download-img {
+    width: 50%;
+}
+
+.download-right-section {
+    height: 100%;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.download-text {
+    color: #9c9c9c;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.download-links img {
+    width: 100%;
+}
+
+.share-btn {
+    background: rgb(224, 53, 70) !important;
+    color: white !important;
+    padding: 14px 22px !important;
+}
+
+.phone-input-section {
+    border: 2px solid #ef4f5f;
+    border-radius: 5px;
+    padding: 13px;
+    display: inline-flex;
+}
+
+.phone-input-section select,
+.phone-input-section select:focus-visible {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.phone-input-section select option {
+    background: white;
+    margin: 5px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.select-code {
+    border-right: 1px solid #ccc;
+}
+
+.phone-input,
+.phone-input:focus-visible {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
