@@ -25,6 +25,7 @@ function Header() {
             } else {
                 setscrollbar(false);
             }
+            return true
         })
         setCities(filterCities);
     }
@@ -38,6 +39,7 @@ function Header() {
             } else {
                 setscrollbar(false);
             }
+            return true
         })
         setRastaurant(filterRastaurant);
     }

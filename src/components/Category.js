@@ -4,6 +4,7 @@ import '../css/Card.css';
 import { Button } from '@mui/material';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import CollectionCard from './CollectionCard';
+
 function Category(props) {
     const { sectionName } = props;
     return (

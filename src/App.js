@@ -1,39 +1,39 @@
 import './App.css';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
-import Category from './components/Category';
-import PopulerLocation from './components/Populer_location';
 import Footer from './components/Footer';
-import Download from './components/Download';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './components/Home';
+import Delivery from './components/delivery/Delivery';
+// import BackToTop from 'react-back-to-top';
+import ZomatoState from './context/contextState';
 
 function App() {
   return (
     <>
-      <div className="container-fluid">
-        <div className="row __header">
-          <Navbar />
-          <Header />
-        </div>
-      </div>
-      <div className="container web__body">
-        <div className="row __category">
-          <Category sectionName="Category Section" />
-        </div>
-        <div className="__category">
-          <Category sectionName="Collections Section" />
-        </div>
-        <div className="populer__location mt-5">
-          <PopulerLocation />
-        </div>
-      </div>
-      <div className="row mt-4 footer container-fluid">
-        <Download />
-      </div>
-      <div className="container">
-        <div className="row mt-4 ">
-          <Footer />
-        </div>
-      </div>
+      <ZomatoState>
+        <BrowserRouter>
+          <div className="container-fluid">
+            <div className="row __header">
+              <Navbar />
+              <Header />
+            </div>
+          </div>
+
+          <Routes>
+            <Route path="/" element={<Home />}>
+
+            </Route>
+            <Route path="/delivery" element={<Delivery />}>
+            </Route>
+          </Routes>
+          <div className="container">
+            <div className="row mt-4 ">
+              <Footer />
+            </div>
+          </div>
+        </BrowserRouter>
+      </ZomatoState>
     </>
   );
 }

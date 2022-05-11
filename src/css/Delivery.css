@@ -1,0 +1,80 @@
+.top__category {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin: 20px;
+    background: rgb(252, 238, 192);
+}
+
+.top__category__name {
+    color: red;
+    margin-top: 12%;
+}
+
+.top__category2 {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin: 20px;
+    background: rgb(248, 248, 248);
+}
+
+.category1__avatar,
+.category2__avatar {
+    margin: 20%;
+}
+
+.category__border {
+    border-bottom: 3px solid red;
+    background-color: rgb(248, 248, 248);
+}
+
+.filter__btn>button {
+    color: rgb(156, 156, 156);
+    ;
+    border-color: rgb(156, 156, 156);
+    ;
+}
+
+.container-fluid {
+    background-color: rgb(248, 248, 248);
+}
+
+.error__msg {
+    margin-top: -20px;
+}
+
+.bg__red {
+    background-color: red !important;
+    color: white !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .error__image {
+        margin-top: 120px;
+        height: 60%;
+        width: 60%;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .error__image {
+        margin-top: 10px;
+        height: 40%;
+        width: 40%;
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1224px) {
+    .error__image {
+        height: 80%;
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1224px) {
+    .error__image {
+        height: 80%;
+        width: 80%;
+    }
+}

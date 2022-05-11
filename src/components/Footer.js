@@ -1,4 +1,4 @@
-import { Button } from '@mui/material';
+import { Button, IconButton, Tooltip } from '@mui/material';
 import React, { useState } from 'react';
 import '../css/Footer.css';
 import AddBoxIcon from '@mui/icons-material/AddBox';
@@ -16,7 +16,6 @@ function Footer() {
     const countryData = Country.getAllCountries();
 
     const handleClick = () => {
-        console.log("clicked");
         setCountryList(!countryList);
     }
 
@@ -40,6 +39,7 @@ function Footer() {
                                 if (item.name.length < 7) {
                                     return <CountryIcon key={index} handleIconClick={handleIconClick} name={item.name} countryCode={item.isoCode} />
                                 }
+                                return true
                             })}
                         </div>
                     </div>
@@ -82,19 +82,39 @@ function Footer() {
                         <h5 className="cursor__pointer">Social Links</h5>
                         <div className="row">
                             <div className="col-lg-2 col-md-2 col-sm-2">
-                                <LinkedInIcon className="footer__icon" title="LinkedIn" />
+                                <Tooltip title="Linkedin">
+                                    <IconButton size="small">
+                                        <LinkedInIcon className="footer__icon" title="LinkedIn" />
+                                    </IconButton>
+                                </Tooltip>
                             </div>
                             <div className="col-lg-2 col-md-2 col-sm-2">
-                                <InstagramIcon />
+                                <Tooltip title="Instagram">
+                                    <IconButton size="small">
+                                        <InstagramIcon className="footer__icon" />
+                                    </IconButton>
+                                </Tooltip>
                             </div>
                             <div className="col-lg-2 col-md-2 col-sm-2">
-                                <TwitterIcon />
+                                <Tooltip title="Twitter">
+                                    <IconButton size="small">
+                                        <TwitterIcon className="footer__icon" />
+                                    </IconButton>
+                                </Tooltip>
                             </div>
                             <div className="col-lg-2 col-md-2 col-sm-2">
-                                <YouTubeIcon />
+                                <Tooltip title="Youtube">
+                                    <IconButton size="small">
+                                        <YouTubeIcon className="footer__icon" />
+                                    </IconButton>
+                                </Tooltip>
                             </div>
                             <div className="col-lg-2 col-md-2 col-sm-2">
-                                <FacebookIcon />
+                                <Tooltip title="Facebook ">
+                                    <IconButton size="small">
+                                        <FacebookIcon className="footer__icon" />
+                                    </IconButton>
+                                </Tooltip>
                             </div>
                         </div>
                     </div>
@@ -103,7 +123,8 @@ function Footer() {
             <div className="container footer-bottom clearfix" style={style}>
                 <div className="copyright">
                     <div className="copyright text-center">
-                        © Copyright <strong><span>Sujit Bhanderi</span></strong>. All Rights Reserved
+                        <hr />
+                        By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2022 ©<strong><span>Sujit Bhanderi</span></strong>. All rights reserved.
                     </div>
                 </div>
             </div>
